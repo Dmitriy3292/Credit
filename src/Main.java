@@ -2,9 +2,15 @@ public class Main {
     public static void main(String[] args) {
 
         CreditService service = new CreditService();
-        double result = service.calculate(12);
-        System.out.println("Ваш месячный платеж " + result);
+        double shouldCalculateCreditTerm12 = service.calculate(12);
+        System.out.println("Ваш месячный платеж " + shouldCalculateCreditTerm12);
 
+
+        double shouldCalculateCreditTerm24 = service.calculate(24);
+        System.out.println("Ваш месячный платеж " + shouldCalculateCreditTerm24);
+
+        double shouldCalculateCreditTerm36 = service.calculate(36);
+        System.out.println("Ваш месячный платеж " + shouldCalculateCreditTerm36);
 
 
        /* int sumCredit = 1_000_000;
